@@ -1,2 +1,2 @@
 // @tag full-page
-// @require D:\Projects\SenchaTheme\themetester\app.js
+// @require D:\SourceTree\SenchaTheme\themetester\app.js
