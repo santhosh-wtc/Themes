@@ -14,10 +14,13 @@
 .x-tab-default {
     background-color: $dark-medium-gray;
 }
-.x-box-inner {
-	background-color: $dark-medium-gray;
-}
 
+.x-tab-bar {
+
+    .x-box-inner {
+    	background-color: $dark-medium-gray;
+    }
+}
 .x-tab-bar-default-top > .x-tab-bar-body-default {
     padding: 8px 0px 0 0px;
 

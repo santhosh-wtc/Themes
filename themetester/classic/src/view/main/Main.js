@@ -39,16 +39,14 @@ Ext.define('ThemeTester.view.main.Main', {
             xtype: 'uicomponents'
         }]
     }, {
-        title: 'Tab Example',
-        items: [{
-            xtype: 'demotabpanel'
-        }]   
-    }, {
         title: 'Menus'
     }, {
         title: 'Navigation'
     }, {
-        title: 'Tabs'
+        title: 'Tabs',
+        items: [{
+            xtype: 'demotabpanel'
+        }] 
     }, {
         title: 'Toolbars'
     }, {
