@@ -1,13 +1,32 @@
- 
- 
-  .x-form-trigger-default{
-      background : $combobox-trigger-bg;
-  }
-  input[role = "combobox"] {
-      background-color : $combobox-default-bg;
-  }
-  .x-form-trigger-default:before {
-      content : $combobox-trigger-content;
-  }
+ //.x-form-trigger-default{
+ // background : $combobox-trigger-bg;
+ //}
+ // input[role = "combobox"] {
+ // background-color : $combobox-default-bg;
+ //}
+ .x-form-trigger-default:before {
+     content: $combobox-trigger-content;
+ }
+ input[role="combobox"] {
+     background-color: $very-dark-gray;
+ }
+ .x-form-trigger-default {
+     background: $very-dark-gray;
+ }
+ .x-boundlist {
+     border-width: 0px;
+     background: $dark-gray;
+ }
+ .x-boundlist-item {
+     line-height: 40px;
+     border-style: none;
+ }
 
-
+.x-form-trigger-default.x-form-trigger-over{
+	border-style: solid;
+	border-width: 1px;
+	background-color: $dark-gray;
+}
+.x-form-trigger-default.x-form-trigger-focus{
+	background-color: $lightest-blue;
+}
