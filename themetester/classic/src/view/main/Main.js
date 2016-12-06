@@ -21,84 +21,29 @@ Ext.define('ThemeTester.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
+    
+    title : 'ThemeTester',
 
-    //ui: 'navigation',
-
-    tabBarHeaderPosition: 1,
-    titleRotation: 0,
-    tabRotation: 0,
-
-    header: {
-        layout: {
-            align: 'stretchmax'
-        },
-        title: {
-            bind: {
-                text: '{name}'
-            },
-            flex: 0
-        },
-        iconCls: 'fa-th-list'
-    },
-
-    tabBar: {
-        flex: 1,
-        layout: {
-            align: 'stretch',
-            overflowHandler: 'none'
-        }
-    },
-
-    responsiveConfig: {
-        tall: {
-            headerPosition: 'top'
-        },
-        wide: {
-            headerPosition: 'left'
-        }
-    },
-
-    defaults: {
-        bodyPadding: 20,
-        tabConfig: {
-            plugins: 'responsive',
-            responsiveConfig: {
-                wide: {
-                    iconAlign: 'left',
-                    textAlign: 'left'
-                },
-                tall: {
-                    iconAlign: 'top',
-                    textAlign: 'center',
-                    width: 120
-                }
-            }
-        }
-    },
-
+    
     items: [{
-        title: 'Form Fields',
-        iconCls: 'fa-home',
+        title: 'Basic UI Elements',
         items: [{
             xtype: 'formfields'
         }]        
     }, {
-        title: 'Grid',
-        iconCls: 'fa-user',
+        title: 'Components',
         items: [{
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        title: 'Menus'
     }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        title: 'Navigation'
+    }, {
+        title: 'Tabs'
+    }, {
+        title: 'Toolbars'
+    }, {
+        title: 'Windows'
     }]
 });

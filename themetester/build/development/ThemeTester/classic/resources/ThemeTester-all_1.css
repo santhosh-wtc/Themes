@@ -1,3 +1,10 @@
+/* D:/SourceTree/SenchaTheme/themetester/sass/etc/all.scss:4 */
+.x-panel-header-title-default > .x-title-text-default:after {
+    /*
+ * This is is imported by virtue of "sass.etc" in "app.json".
+ */
+    content: '' !important;
+}
 /* D:/SourceTree/SenchaTheme/themetester/packages/local/theme-hyrax/classic/sass/var/sencha-themer-defaults.scss:44 */
 .x-tagfield-empty-input,
 .x-tagfield-input-field {
@@ -16411,16 +16418,4 @@ div.x-border-layout-ct {
 /* D:/SourceTree/SenchaTheme/themetester/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-tab-default-right-mc {
     background-color: #2b2b2b;
-}
-/* D:/SourceTree/SenchaTheme/themetester/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-tab-default-right {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
 }
