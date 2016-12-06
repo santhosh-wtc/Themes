@@ -1,0 +1,13 @@
+ 
+ 
+  .x-form-trigger-default{
+      background : $combobox-trigger-bg;
+  }
+  input[role = "combobox"] {
+      background-color : $combobox-default-bg;
+  }
+  .x-form-trigger-default:before {
+      content : $combobox-trigger-content;
+  }
+
+

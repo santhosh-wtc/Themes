@@ -1,0 +1,20 @@
+.x-form-checkbox{
+    background-image    : $checkbox-bg-image-uncheck;
+    background-size     : $checkbox-bg-size;
+    background-position : $checkbox-bg-position;
+    background-repeat   : $checkbox-bg-repeat;
+}
+.x-form-checkbox:before{
+    content : $checkbox-content;
+}
+.x-form-cb-checked{
+  .x-form-checkbox:before{
+      content : $checkbox-content;
+  }
+.x-form-checkbox{
+    background-image    : $checkbox-bg-image-check;
+    background-size     : $checkbox-bg-size;
+    background-position : $checkbox-bg-position;
+    background-repeat   : $checkbox-bg-repeat;
+  } 
+}

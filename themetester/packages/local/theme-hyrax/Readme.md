@@ -1,0 +1,2 @@
+# theme-hyrax - Read Me
+

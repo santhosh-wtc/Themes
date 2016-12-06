@@ -1,0 +1,8 @@
+
+.x-form-text-default {
+    background-color : $text-default-bg;
+}
+
+.x-form-text-default::selection {
+    background-color : $text-default-selection-bg;
+}

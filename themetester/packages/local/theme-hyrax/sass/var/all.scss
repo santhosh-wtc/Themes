@@ -1,0 +1,62 @@
+/*GUI Guidelines color codes*/
+
+$very-dark-gray   : #171717;
+$dark-gray        : #2B2B2B;
+$dark-medium-gray : #333333;
+$medium-gray      : #444444;
+$medium-light-gray: #5D5D5D;
+$light-gray       : #838383;
+
+$medium-blue   : #196385;
+$lightest-blue : #278ED4;
+
+$off-white-text : #F0F0F0;
+$white          : #FFFFFF;
+
+/*Common SASS Variables*/
+
+$opacity-full : 1;
+$opacity-half : 0.5;
+
+
+/* Form Fields */
+$label-text : $light-gray;
+$label-font-weight : 600;
+
+$fieldset-padding        : 5px 15px 10px 0px;
+$fieldset-background     : transparent;
+$fieldset-border-width   : 0px;
+
+$fieldset-header-padding       : 10px 5px 4px 5px;
+$fieldset-header-border-bottom : 1px solid $light-gray;
+$fieldset-header-width         : 100%;
+$fieldset-header-margin-bottom : 8px;
+
+$fieldset-header-text-color       : $light-gray;
+$fieldset-header-text-font-weight : 600;
+$fieldset-header-text-font-size   : 16px;
+
+$field-pading-left : 5px;
+
+$checkbox-bg-image-uncheck : url(get-resource-path('images/grid_uncheckbox.png', $pool: 'shared'));
+$checkbox-bg-image-check   : url(get-resource-path('images/grid_checkbox.png', $pool: 'shared'));
+$checkbox-bg-size          : 27px 27px;
+$checkbox-bg-position      : -5px -5px;
+$checkbox-bg-repeat        : no-repeat;
+$checkbox-content          : '';
+
+$combobox-default-bg      : $medium-light-gray;
+$combobox-trigger-bg      : $medium-light-gray;
+$combobox-trigger-content : "\f107";
+
+$text-default-bg           : $very-dark-gray;
+$text-default-selection-bg : $lightest-blue;
+
+$boundlist-item-color : $off-white-text;
+
+/*Tab panel*/
+
+$tab-scroller-color : $off-white-text;
+
+
+

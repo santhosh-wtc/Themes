@@ -1,0 +1,19 @@
+.x-fieldset{
+  padding       : $fieldset-padding;
+  background    : $fieldset-background;
+  border-width  : $fieldset-border-width !important;
+  .x-fieldset-header{
+      border-bottom   : $fieldset-header-border-bottom;
+      width           : $fieldset-header-width;
+      margin-bottom   : $fieldset-header-margin-bottom;
+      padding         : $fieldset-header-padding;
+      .x-fieldset-header-text{
+        color         : $fieldset-header-text-color;
+        font-weight   : $fieldset-header-text-font-weight;
+        font-size     : $fieldset-header-text-font-size;
+      }
+  }
+  .x-field{
+    padding-left : $field-pading-left;
+  }
+}
