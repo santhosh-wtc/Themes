@@ -4,18 +4,18 @@
 }
 
 .x-tab.x-tab-active.x-tab-default {
-    background-color: #2B2B2B;
+    background-color: $dark-gray;
 }
 
 .x-tab-over.x-tab-default {
-	background-color: #5D5D5D;
+	background-color: $medium-light-gray;
 }
 
 .x-tab-default {
-    background-color: #333333;
+    background-color: $dark-medium-gray;
 }
 .x-box-inner {
-	background-color: #333333;
+	background-color: $dark-medium-gray;
 }
 
 .x-tab-bar-default-top > .x-tab-bar-body-default {
@@ -27,17 +27,17 @@
 }
 
 .x-column-header {
-    background-color: #2B2B2B;
+    background-color: $dark-gray
 }
 
 .x-tab-default-top {
     padding: 8px 10px 8px 10px !important;
     //border-width: 1px;
-    border-color: #171717 !important;
+    border-color: $very-dark-gray !important;
 }
 
 .x-tab-default-left {
    // border-width: 1px;
-    border-color: #171717 !important;
+    border-color: $very-dark-gray !important;
     padding: 8px 10px 8px 10px !important;
 }
