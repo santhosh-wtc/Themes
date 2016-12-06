@@ -59,4 +59,13 @@ $boundlist-item-color : $off-white-text;
 $tab-scroller-color : $off-white-text;
 
 
+/*Window*/
 
+$window-default-border : $dark-medium-gray;
+$window-focus-border   : $lightest-blue;
+
+$msg-window-active-btn-border : $lightest-blue;
+$msg-window-active-btn-bg     : $medium-gray;
+$msg-window-toolbar-border    : 1px;
+$msg-window-toolbar-border-color : $medium-gray;
+$msg-window-toolbar-bg-color     : $very-dark-gray;

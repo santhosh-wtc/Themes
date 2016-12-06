@@ -1,1 +1,24 @@
-@include extjs-window-ui ($ui: 'hyrax-window');
+.x-window-default {
+    border-color: $window-default-border;
+    .x-tool-tool-el {
+        color: $off-white-text;
+    }
+
+    &.x-window-focus, 
+    &.x-message-box {
+    	border-color: $window-focus-border;
+    }
+}
+.x-message-box {
+	.x-btn-default-small.x-btn-focus {
+		border-color     : $msg-window-active-btn-border;
+		background-color : $msg-window-active-btn-bg;
+		box-shadow       : $lightest-blue 0 1px 0px 0 inset, $lightest-blue 0 -1px 0px 0 inset, $lightest-blue -1px 0 0px 0 inset, $lightest-blue 1px 0 0px 0 inset; 
+	}
+
+	.x-toolbar-footer {
+		    border-color     : $msg-window-toolbar-border-color;
+		    border-width     : $msg-window-toolbar-border;
+		    background-color : $msg-window-toolbar-bg-color;
+		}
+} 

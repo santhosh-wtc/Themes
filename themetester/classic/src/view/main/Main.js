@@ -16,7 +16,8 @@ Ext.define('ThemeTester.view.main.Main', {
         'ThemeTester.view.main.MainController',
         'ThemeTester.view.main.MainModel',
         'ThemeTester.view.main.List',
-        'ThemeTester.view.main.FormFields'
+        'ThemeTester.view.main.FormFields',
+        'ThemeTester.view.main.Components'
     ],
 
     controller: 'main',

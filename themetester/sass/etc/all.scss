@@ -1,6 +1,7 @@
 /*
  * This is is imported by virtue of "sass.etc" in "app.json".
  */
-.x-panel-header-title-default > .x-title-text-default:after {
+.x-panel-header-title-default > .x-title-text-default:after,
+.x-window-header-title-default > .x-title-text-default:after {
     content: '' !important;
 }
