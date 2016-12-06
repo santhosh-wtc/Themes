@@ -2,3 +2,42 @@
     color   : $tab-scroller-color;
     opacity : $opacity-full; 
 }
+
+.x-tab.x-tab-active.x-tab-default {
+    background-color: #2B2B2B;
+}
+
+.x-tab-over.x-tab-default {
+	background-color: #5D5D5D;
+}
+
+.x-tab-default {
+    background-color: #333333;
+}
+.x-box-inner {
+	background-color: #333333;
+}
+
+.x-tab-bar-default-top > .x-tab-bar-body-default {
+    padding: 8px 0px 0 0px;
+
+}
+.x-tab-bar-default-left > .x-tab-bar-body-default {
+    padding: 0px 0px 8px 0px;
+}
+
+.x-column-header {
+    background-color: #2B2B2B;
+}
+
+.x-tab-default-top {
+    padding: 8px 10px 8px 10px !important;
+    //border-width: 1px;
+    border-color: #171717 !important;
+}
+
+.x-tab-default-left {
+   // border-width: 1px;
+    border-color: #171717 !important;
+    padding: 8px 10px 8px 10px !important;
+}

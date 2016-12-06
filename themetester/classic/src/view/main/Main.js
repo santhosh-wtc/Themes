@@ -38,6 +38,11 @@ Ext.define('ThemeTester.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
+        title: 'Tab Example',
+        items: [{
+            xtype: 'demotabpanel'
+        }]   
+    }, {
         title: 'Menus'
     }, {
         title: 'Navigation'
