@@ -35,7 +35,7 @@ Ext.define('ThemeTester.view.main.Main', {
     }, {
         title: 'Components',
         items: [{
-            xtype: 'mainlist'
+            xtype: 'uicomponents'
         }]
     }, {
         title: 'Tab Example',
