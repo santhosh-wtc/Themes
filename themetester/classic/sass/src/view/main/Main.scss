@@ -1,0 +1,8 @@
+.main-tabpanel {
+	&.x-panel-header-default {
+		background-color: #279ED4;
+	}
+	&.x-panel-header-default-top {
+		box-shadow: #279ED4 0 1px 0px 0 inset, #279ED4 0 -1px 0px 0 inset, #279ED4 -1px 0 0px 0 inset, #279ED4 1px 0 0px 0 inset;
+	}
+}

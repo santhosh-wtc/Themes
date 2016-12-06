@@ -10104,3 +10104,11 @@ input[role="combobox"] {
     color: #f0f0f0;
     opacity: 1;
 }
+/* D:/SourceTree/SenchaTheme/themetester/classic/sass/src/view/main/Main.scss:2 */
+.main-tabpanel.x-panel-header-default {
+    background-color: #279ed4;
+}
+/* D:/SourceTree/SenchaTheme/themetester/classic/sass/src/view/main/Main.scss:5 */
+.main-tabpanel.x-panel-header-default-top {
+    box-shadow: #279ed4 0 1px 0px 0 inset, #279ed4 0 -1px 0px 0 inset, #279ed4 -1px 0 0px 0 inset, #279ed4 1px 0 0px 0 inset;
+}

@@ -23,8 +23,10 @@ Ext.define('ThemeTester.view.main.Main', {
     viewModel: 'main',
     
     title : 'ThemeTester',
-
-    
+    iconCls : 'x-fa fa-paint-brush',
+    header  : {
+        cls : 'main-tabpanel'
+    },
     items: [{
         title: 'Basic UI Elements',
         items: [{
