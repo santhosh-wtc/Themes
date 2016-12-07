@@ -1,98 +1,142 @@
+
+/*
+*
+*Combo Box UI
+*
+*/
 @include extjs-text-field-ui ( 
-$ui: 'combobox',
-$ui-color: $off-white-text,
-$ui-background-color: $very-dark-gray,
-$ui-border-width: 1px,
-$ui-border-style: solid,
-$ui-border-color: $combobox-default-bg,
-$ui-focus-border-color: $combobox-default-bg,
-$ui-invalid-border-color: $combobox-default-bg,
-$ui-trigger-border-width: 1px,
-$ui-trigger-border-color: $combobox-default-bg,
-$ui-trigger-border-style: none,
-$ui-trigger-glyph-color: $off-white-text,
-$ui-trigger-background-color: $very-dark-gray,
-$ui-trigger-glyph: $combobox-trigger-content,
-$ui-trigger-border-color-over: $white);
+        $ui: 'combobox',
+
+        $ui-color                     : $off-white-text,
+        $ui-background-color          : $very-dark-gray,
+        $ui-border-width              : $border-width-one,
+        $ui-border-style              : $border-style-solid,
+        $ui-border-color              : $combobox-default-bg,
+        $ui-focus-border-color        : $lightest-blue,
+        $ui-invalid-border-color      : $combobox-default-bg,
+        $ui-trigger-border-width      : $border-width-one,
+        $ui-trigger-border-color      : $combobox-default-bg,
+        $ui-trigger-border-style      : $border-style-none,
+        $ui-trigger-glyph-color       : $off-white-text,
+        $ui-trigger-background-color  : $very-dark-gray,
+        $ui-trigger-glyph             : $combobox-trigger-content,
+        $ui-trigger-border-width      : $border-width-zero,
+        $ui-trigger-border-color-over : $light-gray
+);
 
 .x-form-trigger-wrap-combobox:hover {
+    border-color: $off-white-text !important;
+    .x-form-trigger-combobox {
+        border-width : $border-width-left;
+        border-color : $white;
+        border-style : $border-style-solid;
+    }
     input::-webkit-input-placeholder {
         color: $white;
     }
 }
-.x-form-trigger-combobox.x-form-trigger-over {
-    border-style: solid;
-    border-width: 1px;
-    background-color: $dark-gray;
+
+.x-form-trigger-combobox {
+    &.x-form-trigger-over {
+        border-width : $border-width-left;
+        border-color : $white;
+        border-style : $border-style-solid;
+        background-color : $dark-gray;
+    }
 }
+
 .x-form-trigger-combobox.x-form-trigger-focus {
     background-color: $lightest-blue;
 }
-.x-boundlist-item {
-    line-height: 40px;
-}
+
+
+
+/*
+*
+*Drop Down UI
+*
+*/
 
 @include extjs-text-field-ui ( 
-$ui: 'dropdown',
-$ui-color: $off-white-text,
-$ui-background-color: $combobox-default-bg,
-$ui-border-width: 1px,
-$ui-border-style: solid,
-$ui-border-color: $combobox-default-bg,
-$ui-focus-border-color: $combobox-default-bg,
-$ui-invalid-border-color: $combobox-default-bg,
-$ui-trigger-border-width: 1px,
-$ui-trigger-border-color: $combobox-default-bg,
-$ui-trigger-border-style: solid,
-$ui-trigger-glyph-color: $off-white-text,
-$ui-trigger-background-color: $combobox-default-bg,
-$ui-trigger-glyph: $combobox-trigger-content);
+        $ui: 'dropdown',
+
+        $ui-color                    : $off-white-text,
+        $ui-background-color         : $combobox-default-bg,
+        $ui-border-width             : $border-width-one,
+        $ui-border-style             : $border-style-solid,
+        $ui-border-color             : $combobox-default-bg,
+        $ui-focus-border-color       : $combobox-default-bg,
+        $ui-invalid-border-color     : $combobox-default-bg,
+        $ui-trigger-border-width     : $border-width-one,
+        $ui-trigger-border-color     : $combobox-default-bg,
+        $ui-trigger-border-style     : $border-style-solid,
+        $ui-trigger-glyph-color      : $off-white-text,
+        $ui-trigger-background-color : $combobox-default-bg,
+        $ui-trigger-glyph            : $combobox-trigger-content
+);
 
 .x-form-trigger-wrap-dropdown:hover {
     input::-webkit-input-placeholder {
-        color: $white;
+        color : $white;
     }
 }
 .x-form-trigger-wrap-dropdown:hover {
     .x-form-text-dropdown, .x-form-trigger-dropdown {
-        background-color: $dark-medium-gray !important;
-        border-color: $dark-medium-gray !important;
+        background-color : $dark-medium-gray !important;
+        border-color     : $dark-medium-gray !important;
     }
 }
-.x-form-trigger-dropdown {
-    line-height: 28px;
+.x-form-trigger-dropdown{
+    line-height : 28px;
 }
 
+/*
+*
+*LightWeight Drop Down UI
+*
+*/
+
 @include extjs-text-field-ui ( 
-$ui: 'lightdropdown',
-$ui-color: $off-white-text,
-$ui-empty-color: $off-white-text,
-$ui-background-color: $very-dark-gray,
-$ui-border-width: 1px,
-$ui-border-style: solid,
-$ui-border-color: $very-dark-gray,
-$ui-focus-border-color: $very-dark-gray,
-$ui-invalid-border-color: $very-dark-gray,
-$ui-trigger-border-width: 1px,
-$ui-trigger-border-color: $very-dark-gray,
-$ui-trigger-border-style: solid,
-$ui-trigger-glyph-color: $off-white-text,
-$ui-trigger-background-color: $very-dark-gray,
-$ui-trigger-glyph: $combobox-trigger-content);
+        $ui: 'lightdropdown',
+
+        $ui-color                    : $off-white-text,
+        $ui-empty-color              : $off-white-text,
+        $ui-background-color         : $very-dark-gray,
+        $ui-border-width             : $border-width-one,
+        $ui-border-style             : $border-style-solid,
+        $ui-border-color             : $very-dark-gray,
+        $ui-focus-border-color       : $very-dark-gray,
+        $ui-invalid-border-color     : $very-dark-gray,
+        $ui-trigger-border-width     : $border-width-one,
+        $ui-trigger-border-color     : $very-dark-gray,
+        $ui-trigger-border-style     : $border-style-solid,
+        $ui-trigger-glyph-color      : $off-white-text,
+        $ui-trigger-background-color : $very-dark-gray,
+        $ui-trigger-glyph            : $combobox-trigger-content
+);
 
 .x-form-trigger-wrap-lightdropdown.x-form-trigger-wrap-focus {
     input::-webkit-input-placeholder {
-        color: $lightest-blue !important;
+        color : $lightest-blue !important;
     }
 }
 .x-form-trigger-wrap-lightdropdown:hover {
     input::-webkit-input-placeholder {
-        color: $white;
+        color : $white;
     }
 }
 .x-form-trigger-lightdropdown {
-    line-height: 28px;
+    line-height : 28px;
     &.x-form-trigger-focus {
-        color: $lightest-blue !important;
+        color : $lightest-blue !important;
     }
+}
+
+
+.x-form-item-label-combobox, 
+.x-form-item-label-dropdown, 
+.x-form-item-label-lightdropdown {
+    line-height : $label-line-height;
+    color       : $label-text;
+    font-weight : $label-font-weight;
 }

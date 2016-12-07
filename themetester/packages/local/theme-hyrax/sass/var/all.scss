@@ -19,12 +19,23 @@ $white          : #FFFFFF;
 
 $opacity-full : 1;
 $opacity-half : 0.5;
-$transparent    : transparent;
+$transparent  : transparent;
 
+$border-style-none  : none;
+$border-style-solid : solid;
+
+$border-width-zero : 0px;
+$border-width-one  : 1px;
+$border-width-two  : 2px;
+$border-width-top    : 1px 0px 0px 0px;
+$border-width-right  : 0px 1px 0px 0px;
+$border-width-bottom : 0px 0px 1px 0px;
+$border-width-left   : 0px 0px 0px 1px;
 
 /* Form Fields */
-$label-text : $light-gray;
+$label-text        : $light-gray;
 $label-font-weight : 600;
+$label-line-height : 28px;
 
 $fieldset-padding        : 5px 15px 10px 0px;
 $fieldset-background     : transparent;

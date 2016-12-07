@@ -34,10 +34,7 @@ Ext.define('ThemeTester.view.main.Main', {
             xtype: 'formfields'
         }]        
     }, {
-        title: 'Components',
-        items: [{
-            xtype: 'uicomponents'
-        }]
+        title: 'Components'
     }, {
         title: 'Menus'
     }, {
@@ -50,6 +47,9 @@ Ext.define('ThemeTester.view.main.Main', {
     }, {
         title: 'Toolbars'
     }, {
-        title: 'Windows'
+        title: 'Windows',
+        items: [{
+            xtype: 'uicomponents'
+        }]
     }]
 });
