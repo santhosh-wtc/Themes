@@ -1,3 +1,19 @@
 .x-boundlist-item {
 	color : $boundlist-item-color !important;
 }
+
+$boundlist-background-color : $combobox-default-bg;
+$boundlist-border-color     : $combobox-default-bg;
+$boundlist-border-style     : solid;
+$boundlist-border-width     : 1px;
+
+$boundlist-item-border-width : 1px;
+$boundlist-item-text-color   : $off-white-text;
+
+$boundlist-item-over-background-color : $dark-medium-gray;
+$boundlist-item-over-border-color     : $dark-medium-gray;
+$boundlist-item-over-text-color       : $off-white-text;
+
+$boundlist-item-selected-background-color : $lightest-blue;
+$boundlist-item-selected-border-color     : $lightest-blue;
+$boundlist-item-selected-text-color       : $off-white-text;

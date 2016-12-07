@@ -47,8 +47,8 @@ $checkbox-bg-position      : -5px -5px;
 $checkbox-bg-repeat        : no-repeat;
 $checkbox-content          : '';
 
-$combobox-default-bg      : $medium-light-gray;
-$combobox-trigger-bg      : $medium-light-gray;
+$combobox-default-bg      : $dark-gray;
+$combobox-trigger-bg      : $dark-gray;
 $combobox-trigger-content : "\f107";
 
 $text-default-bg           : $very-dark-gray;
@@ -71,3 +71,11 @@ $msg-window-active-btn-bg     : $medium-gray;
 $msg-window-toolbar-border    : 1px;
 $msg-window-toolbar-border-color : $medium-gray;
 $msg-window-toolbar-bg-color     : $very-dark-gray;
+
+/*Scrollbar*/
+
+$scroller-size           : 12px;
+$scroller-thumb-bg-color : #76797D;
+$scroller-thumb-border   : 2px solid #2B2C33;
+$scroller-track-bg-color : #2B2C33;
+$scroller-corner-bg-color: transparent;
