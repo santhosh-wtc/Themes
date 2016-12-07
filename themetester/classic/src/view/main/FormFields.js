@@ -1,8 +1,7 @@
 Ext.define('ThemeTester.view.main.FormFields', {
     extend: 'Ext.container.Container',
     xtype: 'formfields',
-
-    padding: 50,
+    padding: '20 0 0 20',
     scrollable : true,
     height     : '100%',
      items:[{
