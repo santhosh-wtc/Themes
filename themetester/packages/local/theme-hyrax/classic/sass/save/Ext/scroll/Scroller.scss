@@ -1,0 +1,40 @@
+::-webkit-scrollbar {
+  width      : $scroller-size;
+  height     : $scroller-size;
+}
+
+::-webkit-scrollbar-thumb {
+  background : $scroller-thumb-bg-color;
+  border     : $scroller-thumb-border;
+}
+::-webkit-scrollbar-thumb:hover {
+  background : $scroller-thumb-bg-color;
+}
+::-webkit-scrollbar-thumb:active {
+  background : $scroller-thumb-bg-color;
+}
+
+::-webkit-scrollbar-track {
+  background : $scroller-track-bg-color;
+}
+::-webkit-scrollbar-track:hover {
+  background : $scroller-track-bg-color;
+}
+::-webkit-scrollbar-track:active {
+  background : $scroller-track-bg-color;
+}
+
+::-webkit-scrollbar-corner {
+  background : $scroller-corner-bg-color;
+}
+
+.x-scroller {
+    scrollbar-base-color        : $scroller-track-bg-color;
+    scrollbar-face-color        : $scroller-thumb-bg-color;
+    scrollbar-3dlight-color     : $scroller-track-bg-color;
+    scrollbar-highlight-color   : $scroller-track-bg-color;
+    scrollbar-track-color       : $scroller-track-bg-color;
+    scrollbar-arrow-color       : $scroller-thumb-bg-color;
+    scrollbar-shadow-color      : $scroller-track-bg-color;
+    scrollbar-dark-shadow-color : $scroller-track-bg-color;
+}

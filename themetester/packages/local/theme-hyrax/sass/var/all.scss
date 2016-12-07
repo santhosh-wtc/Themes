@@ -66,11 +66,13 @@ $tab-scroller-color : $off-white-text;
 $window-default-border : $dark-medium-gray;
 $window-focus-border   : $lightest-blue;
 
-$msg-window-active-btn-border : $lightest-blue;
-$msg-window-active-btn-bg     : $medium-gray;
-$msg-window-toolbar-border    : 1px;
-$msg-window-toolbar-border-color : $medium-gray;
-$msg-window-toolbar-bg-color     : $very-dark-gray;
+$msg-window-active-btn-border      : $medium-blue;
+$msg-window-active-btn-bg          : $dark-gray;
+$msg-window-active-btn-over-border : $lightest-blue;
+$msg-window-active-btn-over-bg     : $medium-gray;
+$msg-window-toolbar-border         : 1px;
+$msg-window-toolbar-border-color   : $medium-gray;
+$msg-window-toolbar-bg-color       : $very-dark-gray;
 
 /*Scrollbar*/
 
