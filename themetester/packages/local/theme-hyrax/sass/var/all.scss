@@ -19,6 +19,7 @@ $white          : #FFFFFF;
 
 $opacity-full : 1;
 $opacity-half : 0.5;
+$transparent    : transparent;
 
 
 /* Form Fields */
@@ -83,3 +84,11 @@ $scroller-thumb-bg-color : #76797D;
 $scroller-thumb-border   : 2px solid #2B2C33;
 $scroller-track-bg-color : #2B2C33;
 $scroller-corner-bg-color: transparent;
+
+/*Tree Panel*/
+
+$node-minified-content : "\f107";
+$node-expanded-content : "\f105";
+$tree-icon: "\f220";
+$semi-transparent-parent-node: rgba(43, 43, 43, 0.71);
+$semi-transparent-child-node: rgba(68, 68, 68, 0.54);

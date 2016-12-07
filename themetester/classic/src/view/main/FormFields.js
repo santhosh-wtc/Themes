@@ -6,6 +6,60 @@ Ext.define('ThemeTester.view.main.FormFields', {
     scrollable : true,
     height     : '100%',
      items:[{
+        layout: 'hbox',
+        margin: '0 0 10 0',
+        items:[
+        {
+                xtype: 'textfield',
+                fieldLabel: 'Text Box',
+                emptyText: 'Input'
+            },
+            {
+                xtype: 'button',
+                margin: '0 0 0 10',
+                text: 'Tree List',
+                width: 275,
+                handler: function() {
+                    Ext.Window.create({
+                        layout: 'fit',
+                        width: 400,
+                        height: 400,
+                        padding: '20 30 5 30',
+                        header: false,
+                        closeAction: 'destroy',
+                        plain: true,
+                        dockedItems: [{
+                            xtype: 'toolbar',
+                            dock: 'bottom',
+                            defaults: {
+                                xtype: 'button',
+                                width: 180
+                            },
+                            items: [{
+                                text: 'Cancel',
+                                margin: '0 0 0 75',
+                                handler: function() {
+                                    this.up().up().destroy();
+                                }
+                            }]
+                        }],
+                        items: [{
+                            xtype: 'treepanel',
+                            header: false,
+                            store: store,
+                            rootVisible: false,
+                            animate: true,
+                            reserveScrollbar: true
+                        }]
+
+                    }).show();
+
+                }
+            }
+        ]
+     },   
+            
+            {
             xtype: 'combobox',
             fieldLabel: 'Combo Box',
             ui: 'combobox',
@@ -24,11 +78,6 @@ Ext.define('ThemeTester.view.main.FormFields', {
                 displayField: 'text',
                 triggerAction: 'all',
                 editable: false
-            },
-            {
-            	xtype: 'textfield',
-            	fieldLabel: 'Text Box',
-            	emptyText: 'Input'
             },
             {
             xtype: 'combobox',
@@ -69,7 +118,8 @@ Ext.define('ThemeTester.view.main.FormFields', {
                 displayField: 'text',
                 triggerAction: 'all',
                 editable: false
-            },{
+            },            
+            {
                 xtype : 'button',
                 text  : 'Normal',
                 margin : 20
@@ -137,6 +187,35 @@ Ext.define('ThemeTester.view.main.FormFields', {
                 width : 100
 
             }
+            
      ]
 
+});
+
+var store = Ext.create('Ext.data.TreeStore', {
+    root: {
+        expanded: true,
+        children: [{
+            text: 'Level 1, Item 1',
+            expanded: true,
+            children: [{
+                text: 'Level 2, Item 1',
+                children: [{
+                    text: 'Level 3, Item 1',
+                    children: [{
+                        text: 'Level 4, Item 1'
+                    }, {
+                        text: 'Level 4, Item 2'
+                    }]
+                }, {
+                    text: 'Level 3, Item 2',
+                    children: [{
+                        text: 'Level 4, Item 1'
+                    }, {
+                        text: 'Level 4, Item 2'
+                    }]
+                }]
+            }]
+        }]
+    }
 });

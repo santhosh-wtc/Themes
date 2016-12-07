@@ -1,0 +1,21 @@
+.x-grid-tree-node-expanded .x-tree-elbow-plus:before, .x-grid-tree-node-expanded .x-tree-elbow-end-plus:before {
+    content: $node-expanded-content;
+}
+
+.x-tree-elbow-plus:before, .x-tree-elbow-end-plus:before {
+    content: $node-minified-content;
+}
+
+.x-tree-icon-parent-expanded:before {
+    content: $tree-icon;
+    padding-left: 4px;
+    background-color: $semi-transparent-parent-node;
+    color: $transparent;
+}
+
+.x-tree-icon-parent:before {
+    content: $tree-icon;
+    padding-left: 4px;
+    background-color: $semi-transparent-child-node;
+    color: $transparent;
+}
