@@ -33,9 +33,42 @@
     line-height: 28px;
    }
 
+ @include extjs-text-field-ui (
+    $ui  : 'lightdropdown',
+    $ui-color                    : $off-white-text,
+    $ui-empty-color              : $off-white-text,
+    $ui-background-color         : $very-dark-gray,
+    $ui-border-width             : 1px,
+    $ui-border-style             : solid,
+    $ui-border-color             : $very-dark-gray,
+    $ui-focus-border-color       : $very-dark-gray,
+    $ui-invalid-border-color     : $very-dark-gray,
+    $ui-trigger-border-width     : 1px,
+    $ui-trigger-border-color     : $very-dark-gray,
+    $ui-trigger-border-style     : solid,
+    $ui-trigger-glyph-color      : $off-white-text,
+    $ui-trigger-background-color : $very-dark-gray,
+    $ui-trigger-glyph            : $combobox-trigger-content
 
+    ); 
+    .x-form-trigger-wrap-lightdropdown.x-form-trigger-wrap-focus {
+        input::-webkit-input-placeholder {
+            color : $lightest-blue !important;
+        }
+    }
+    .x-form-trigger-wrap-lightdropdown:hover {
+        input::-webkit-input-placeholder {
+            color : $white;
+        }
+    }
+    .x-form-trigger-lightdropdown {
+        line-height: 28px;
+        &.x-form-trigger-focus {
+            color :  $lightest-blue !important;
+        }
+    }
  
- .x-form-trigger-default:before {
+ /*.x-form-trigger-default:before {
      content: $combobox-trigger-content;
  }
  input[role="combobox"] {
@@ -60,4 +93,4 @@
 }
 .x-form-trigger-default.x-form-trigger-focus{
 	background-color: $lightest-blue;
-}
+}*/
