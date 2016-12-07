@@ -7,7 +7,8 @@ Ext.define('ThemeTester.view.main.FormFields', {
      items:[{
             xtype: 'combobox',
             fieldLabel: 'Combo Box',
-            emptyText: 'Select One',
+            ui: 'combobox',
+            emptyText: 'Input',
             store: new Ext.data.SimpleStore({
                     data: [
                         [1, 'List Item 1'],
