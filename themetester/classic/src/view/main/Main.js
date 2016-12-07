@@ -36,7 +36,10 @@ Ext.define('ThemeTester.view.main.Main', {
     }, {
         title: 'Components'
     }, {
-        title: 'Menus'
+        title: 'Menus',
+        items: [{
+            xtype: 'menucontainer'
+        }] 
     }, {
         title: 'Navigation'
     }, {

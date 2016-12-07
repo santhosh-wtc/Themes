@@ -1,0 +1,19 @@
+
+@include extjs-menu-ui ( 
+$ui: 'hyraxmenu',
+$ui-text-color :  $white,
+$ui-background-color :  $dark-medium-gray,
+$ui-border-color : $dark-medium-gray,
+$ui-item-active-text-color : $white,
+$ui-item-active-glyph-color : $white,
+$ui-item-height : 50px,
+);
+
+
+.x-menu-item-arrow-hyraxmenu:before {
+    content: $node-expanded-content
+}
+
+.x-menu-item-text-hyraxmenu, .x-menu-item-cmp-hyraxmenu {
+    margin: 1px 66px 0px 8px;
+}
