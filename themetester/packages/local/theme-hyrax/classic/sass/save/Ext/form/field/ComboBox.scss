@@ -4,6 +4,37 @@
  // input[role = "combobox"] {
  // background-color : $combobox-default-bg;
  //}
+
+@include extjs-text-field-ui (
+    $ui: 'dropdown',
+    $ui-color                    : $off-white-text,
+    $ui-background-color         : $combobox-default-bg,
+    $ui-border-width             : 1px,
+    $ui-border-style             : solid,
+    $ui-border-color             : $combobox-default-bg,
+    $ui-focus-border-color       : $combobox-default-bg,
+    $ui-invalid-border-color     : $combobox-default-bg,
+    $ui-trigger-border-width     : 1px,
+    $ui-trigger-border-color     : $combobox-default-bg,
+    $ui-trigger-border-style     : solid,
+    $ui-trigger-glyph-color      : $off-white-text,
+    $ui-trigger-background-color : $combobox-default-bg,
+    $ui-trigger-glyph            : $combobox-trigger-content
+
+    ); 
+ .x-form-trigger-wrap-dropdown:hover {
+          .x-form-text-dropdown,
+          .x-form-trigger-dropdown{
+           background-color : $dark-medium-gray !important;
+           border-color : $dark-medium-gray !important;
+          }
+     }
+ .x-form-trigger-dropdown {
+    line-height: 28px;
+   }
+
+
+ 
  .x-form-trigger-default:before {
      content: $combobox-trigger-content;
  }
