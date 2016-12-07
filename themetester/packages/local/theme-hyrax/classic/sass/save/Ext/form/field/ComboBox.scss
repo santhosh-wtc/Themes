@@ -49,6 +49,11 @@ $ui-trigger-background-color: $combobox-default-bg,
 $ui-trigger-glyph: $combobox-trigger-content);
 
 .x-form-trigger-wrap-dropdown:hover {
+    input::-webkit-input-placeholder {
+        color: $white;
+    }
+}
+.x-form-trigger-wrap-dropdown:hover {
     .x-form-text-dropdown, .x-form-trigger-dropdown {
         background-color: $dark-medium-gray !important;
         border-color: $dark-medium-gray !important;
