@@ -104,6 +104,13 @@
      */
     "output": "${package.dir}/build",
 
+    "resources": [
+        {
+            "path": "${package.dir}/resources",
+            "output": "shared"
+        }
+    ],
+
     /**
      * Indicates whether this is a locally developed package or downloaded form a repository.
      * Defaults to true on newly generated packages, should not be changed.

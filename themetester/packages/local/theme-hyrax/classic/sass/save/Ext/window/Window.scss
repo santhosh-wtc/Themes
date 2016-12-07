@@ -11,13 +11,13 @@
 }
 .x-message-box {
 	.x-btn-default-small.x-btn-focus.x-btn-over {
-		border-color     : $msg-window-active-btn-border;
-		background-color : $msg-window-active-btn-bg;
+		border-color     : $msg-window-active-btn-over-border;
+		background-color : $msg-window-active-btn-over-bg;
 		box-shadow       : $lightest-blue 0 1px 0px 0 inset, $lightest-blue 0 -1px 0px 0 inset, $lightest-blue -1px 0 0px 0 inset, $lightest-blue 1px 0 0px 0 inset; 
 	}
 	.x-btn-default-small.x-btn-focus {
-		border-color     : $msg-window-active-btn-over-border;
-		background-color : $msg-window-active-btn-over-bg;
+		border-color     : $msg-window-active-btn-border;
+		background-color : $msg-window-active-btn-bg;		
 		box-shadow       : $medium-blue 0 1px 0px 0 inset, $medium-blue 0 -1px 0px 0 inset, $medium-blue -1px 0 0px 0 inset, $medium-blue 1px 0 0px 0 inset; 
 	}
 

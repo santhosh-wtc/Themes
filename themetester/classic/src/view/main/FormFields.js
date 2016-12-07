@@ -3,7 +3,8 @@ Ext.define('ThemeTester.view.main.FormFields', {
     xtype: 'formfields',
 
     padding: 50,
-
+    scrollable : true,
+    height     : '100%',
      items:[{
             xtype: 'combobox',
             fieldLabel: 'Combo Box',
@@ -68,6 +69,73 @@ Ext.define('ThemeTester.view.main.FormFields', {
                 displayField: 'text',
                 triggerAction: 'all',
                 editable: false
+            },{
+                xtype : 'button',
+                text  : 'Normal',
+                margin : 20
+            },
+            {
+                xtype: 'button',
+                text : 'Disabled',
+                disabled : true,
+                margin : 20
+            },
+            {
+                xtype: 'button',
+                text : 'Pressed',
+                enableToggle : true,
+                pressed      : true,
+                margin : 20
+            },
+            {
+                xtype: 'fieldcontainer',
+                fieldLabel: 'Checkbox',
+                defaultType: 'checkboxfield',
+                items: [
+                    {
+                        boxLabel  : 'Checked',
+                        checked   : true
+                    }, {
+                        boxLabel  : 'UnChecked',
+                        checked   : false
+                    },
+                    {
+                        boxLabel  : 'Checked',
+                        disabled  : true,
+                        name      : 'radio',
+                        
+                    }
+                ]
+            },
+            {
+                xtype: 'fieldcontainer',
+                fieldLabel: 'Radio Button',
+                defaultType: 'radiofield',
+                items: [
+                    {
+                        boxLabel  : 'Checked',
+                        checked   : true,
+                        name      : 'radio',
+
+                    }, 
+                    {
+                        boxLabel  : 'UnChecked',
+                        checked   : false,
+                        name      : 'radio'
+                    },
+                    {
+                        boxLabel  : 'Disabled',
+                        disabled  : true,
+                        name      : 'radio',
+                        
+                    } 
+                ]
+            },
+            {
+                xtype : 'progressbar',
+                value : 0.5,
+                width : 100
+
             }
      ]
 
